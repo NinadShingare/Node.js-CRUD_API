@@ -10,9 +10,9 @@ const bodyParser= require('body-parser');
 
 mongoose.set('strictQuery', false);
 //special characters in passwords are encoded
-//mongoose.connect('mongodb+srv://abc:Srm%402023@cluster0.apa6xjc.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser: true});
 
-mongoose.connect('mongodb+srv://innovation:Center12@cluster0.wmlrl7s.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser: true});
+mongoose.connect('mongodb+srv://abc:abc@cluster0.abc.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser: true});
+//please don't use above uri, paste your own mongodb uri
 
 mongoose.connection.on('error',err=>{
     console.log('connection failed');
